@@ -1,13 +1,18 @@
 <template>
-    <div id="nav">
-      <!-- 科室 -->
-      <div>科室</div>
-      <router-link to="/section/list">科室列表</router-link> |
-    </div>
+  <div class="home">
+    <img alt="Vue logo" src="../assets/logo.png">
+    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+  </div>
 </template>
 
 <script lang="ts">
-import { defineComponent  } from 'vue';
+import { defineComponent } from 'vue';
+import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
+
 export default defineComponent({
+  name: 'Home',
+  components: {
+    HelloWorld,
+  },
 });
-</script> 
+</script>

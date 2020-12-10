@@ -1,14 +1,30 @@
-
 <template>
-    <div>
-    <!-- 路由页面  没找到该组件的引入方法，但是它就是实现了…… -->
-    <router-view />
+  <div id="nav">
+    <router-link to="/">Home</router-link> |
+    <router-link to="/about">About</router-link>
   </div>
+  <router-view/>
 </template>
-<script lang="ts">
-  import "@/assets/global.scss";
-  import { defineComponent } from 'vue';
-  export default defineComponent({
 
-  });
-</script>
+<style lang="scss">
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
+
+#nav {
+  padding: 30px;
+
+  a {
+    font-weight: bold;
+    color: #2c3e50;
+
+    &.router-link-exact-active {
+      color: #42b983;
+    }
+  }
+}
+</style>

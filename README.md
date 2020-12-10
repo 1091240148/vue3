@@ -1,4 +1,4 @@
-# mobile-medical2
+# hello-world
 
 ## Project setup
 ```
